@@ -3,7 +3,7 @@
  # ethereum/client-go --fast --cache=512 --testnet
 
 ethereum:
-   image: ethereum/client-go
+   image: sgehrman/stellar-ethereum
    container_name: stellar-ethereum
    command: --fast --cache=512 --testnet --rpc --rpcaddr 0.0.0.0
    volumes:
