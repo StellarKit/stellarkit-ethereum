@@ -5,7 +5,7 @@
 ethereum:
    image: ethereum/client-go
    container_name: stellar-ethereum
-   command: --fast --cache=512 --testnet
+   command: --fast --cache=512 --testnet --rpcaddr 0.0.0.0
    volumes:
      - /home/steve/ethereum-test:/root
    restart: unless-stopped
