@@ -8,8 +8,8 @@ services:
      container_name: stellar-ethereum
      command: --fast --cache=512 --testnet --rpc --rpcaddr 0.0.0.0
      volumes:
-       - /home/steve/ethereum-test:/root
+       - ~/ethereum-test:/root
      restart: unless-stopped
      ports:
-       - 8545:8545/tcp
-       - 30303:30303/tcp
+       - "8545:8545"
+       - "30303:30303"
