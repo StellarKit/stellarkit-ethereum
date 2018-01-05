@@ -17,3 +17,5 @@ More details here: https://hub.docker.com/r/ethereum/client-go/
 --ipcdisable Disable the IPC-RPC server
 --ipcapi API's offered over the IPC-RPC interface (default: "admin,debug,eth,miner,net,personal,shh,txpool,web3")
 --ipcpath Filename for IPC socket/pipe within the datadir (explicit paths escape it)
+
+geth attach ipc://${HOME}/.ethereum/testnet/geth.ipc
