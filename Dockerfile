@@ -1,8 +1,8 @@
 FROM golang:alpine as builder
 
-RUN apk add --update go git make gcc musl-dev linux-headers ca-certificates && \
-  git clone --depth 1 --branch release/1.7 https://github.com/ethereum/go-ethereum && \
-  cd go-ethereum && make all
+RUN apk add --update go git make gcc musl-dev linux-headers ca-certificates
+RUN  git clone --depth 1 --branch release/1.7 https://github.com/ethereum/go-ethereum
+RUN cd /go-ethereum && make all
 
 FROM alpine:latest
 
