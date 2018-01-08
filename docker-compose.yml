@@ -5,7 +5,7 @@ services:
      container_name: stellar-ethereum
      command:        --fast --cache=512 --rinkeby --rpc --rpcaddr 0.0.0.0
      volumes:
-       - ~/ethereum-test:/root
+       - ~/stellar/ethereum:/root
      restart:        unless-stopped
      ports:
        - "8545:8545"
