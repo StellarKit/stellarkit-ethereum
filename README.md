@@ -10,11 +10,11 @@ docker-compose up -d
 
 Defaults to testnet.
 
+Creates a folder 'stellar' in your home folder.  Everything is stored there, delete it to reset.
+
 Edit docker-compose.yml for mainnet
 
 Pull requests welcome!
-
-docker-compose up -d
 
 More details here: https://hub.docker.com/r/ethereum/client-go/
 
