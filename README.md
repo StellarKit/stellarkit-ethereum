@@ -22,3 +22,9 @@ connect to testnet client
 ```
 geth attach ipc://${HOME}/.ethereum/testnet/geth.ipc
 ```
+
+### Donations
+If you like this code, a donation would be appreciated:
+```
+GCYQSB3UQDSISB5LKAL2OEVLAYJNIR7LFVYDNKRMLWQKDCBX4PU3Z6JP
+```
