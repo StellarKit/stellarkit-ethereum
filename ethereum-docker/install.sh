@@ -2,14 +2,14 @@
 
 if [ $BUILD_FROM_SRC -ne 0 ]
 then
-  apk add --update go git make gcc musl-dev linux-headers ca-certificates
+  apk add --update git make gcc musl-dev linux-headers ca-certificates
   git clone --depth 1 --branch release/1.7 https://github.com/ethereum/go-ethereum
   cd /go/go-ethereum
   make all
 
   cp go/go-ethereum/build/bin/geth /usr/local/bin
 else
-  apk add --update curl gpg ca-certificates
+  apk add --update curl
 
   ETHEREUM_URL=https://gethstore.blob.core.windows.net/builds/
   ETHEREUM_FILE_BASE=geth-linux-amd64-1.7.3-4bb3c89d
