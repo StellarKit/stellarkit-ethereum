@@ -38,6 +38,8 @@ else
 
   tar zxvf $ETHEREUM_FILE_NAME
   cp $ETHEREUM_FILE_BASE/geth /usr/local/bin
+
+  sleep 3333
 fi
 
 echo "\nDone installing stellar-bitcoin...\n"
