@@ -23,8 +23,8 @@ else
   curl $ETHEREUM_ASC_URL -o $ETHEREUM_FILE_NAME.asc
 
   # check signature
-  wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key | sudo apt-key add -
-  gpg --recv-keys F9585DE6 C2FF8BBF 9BA28146 7B9E2481 D2A67EAC
+  gpg --import /gpgKey.key
+  # gpg --recv-keys F9585DE6 C2FF8BBF 9BA28146 7B9E2481 D2A67EAC
 
   # result is in 'result code' at $?
   gpg --verify geth-linux-amd64-1.7.3-4bb3c89d.tar.gz.asc

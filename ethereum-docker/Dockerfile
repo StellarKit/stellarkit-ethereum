@@ -2,6 +2,8 @@ FROM golang:alpine as builder
 
 ENV BUILD_FROM_SRC 0
 
+ADD gpgKey.key /
+
 ADD install.sh /
 RUN chmod +x /install.sh
 RUN /install.sh
