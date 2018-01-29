@@ -1,6 +1,6 @@
 FROM golang:alpine as builder
 
-ENV BUILD_FROM_SRC false
+ENV BUILD_FROM_SRC 0
 
 ADD install.sh /
 RUN chmod +x /install.sh

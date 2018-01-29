@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$BUILD_FROM_SRC" = true ]
+if [ $BUILD_FROM_SRC -ne 0 ]
 then
   apk add --update go git make gcc musl-dev linux-headers ca-certificates
   git clone --depth 1 --branch release/1.7 https://github.com/ethereum/go-ethereum
