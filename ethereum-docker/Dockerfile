@@ -20,4 +20,4 @@ RUN chmod +x /entry.sh
 
 EXPOSE 8545 8546 30303 30303/udp 30304/udp
 
-ENTRYPOINT ["/entry.sh"]
+ENTRYPOINT ["geth"]
