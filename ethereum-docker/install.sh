@@ -45,4 +45,4 @@ else
   echo $(which geth)
 fi
 
-echo "\nDone installing stellar-bitcoin...\n"
+echo "\nDone installing stellar-ethereum...\n"
