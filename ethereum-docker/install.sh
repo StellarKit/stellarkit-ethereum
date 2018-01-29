@@ -9,6 +9,8 @@ then
 
   cp go/go-ethereum/build/bin/geth /usr/local/bin
 else
+  apk add --update curl gpg ca-certificates
+
   ETHEREUM_URL=https://gethstore.blob.core.windows.net/builds/
   ETHEREUM_FILE_BASE=geth-linux-amd64-1.7.3-4bb3c89d
   ETHEREUM_FILE_NAME=$ETHEREUM_FILE_BASE.tar.gz
