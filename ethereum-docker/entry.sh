@@ -2,4 +2,4 @@
 
 sleep 3333
 
-geth
+geth "$@"
