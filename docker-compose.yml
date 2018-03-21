@@ -3,7 +3,7 @@ services:
   ethereum:
      build:          ./ethereum-docker
      container_name: stellar-ethereum
-     command:        --fast --cache=512 --rinkeby --rpc --rpcaddr 0.0.0.0
+     command:        --fast --cache=512 --rinkeby --rpc --rpcvhosts=* --rpcaddr 0.0.0.0
      volumes:
        - ~/stellar/ethereum:/root
      restart:        unless-stopped
