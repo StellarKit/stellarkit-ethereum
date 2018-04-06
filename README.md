@@ -1,4 +1,4 @@
-## Stellar Ethereum
+## StellarKit Ethereum
 
 ### The simplest and cleanest Docker image for running ethereum
 
@@ -20,6 +20,8 @@ More details here: <https://hub.docker.com/r/ethereum/client-go/>
 connect to testnet client
 
     geth attach ipc://${HOME}/.ethereum/testnet/geth.ipc
+
+Disclaimer: We not affiliated with, or sponsored or endorsed by, the Stellar Development Foundation.
 
 ### Donations
 
