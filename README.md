@@ -21,7 +21,7 @@ connect to testnet client
 
     geth attach ipc://${HOME}/.ethereum/testnet/geth.ipc
 
-Disclaimer: We not affiliated with, or sponsored or endorsed by, the Stellar Development Foundation.
+Disclaimer: We are not affiliated with, or sponsored or endorsed by, the Stellar Development Foundation.
 
 ### Donations
 
